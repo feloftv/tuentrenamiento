@@ -9,19 +9,16 @@
 <body>
   <header>
     <div class="wrap">
-      <h1>Felipe</h1>
-      <h2>Guía Visual de Entrenamiento</h2>
-      <div class="subtitle">
-        Offline • guarda los progresos en este dispositivo • exporta/importa para sincronizar
-      </div>
+      <img src="img/logo/buffalo.jpg" class="logo" alt="Logo Buffalo" style="width:120px; margin-top:10px;">
       <div class="tabs" id="tabs"></div>
+      
       <div class="toolbar">
         <button class="btn" id="btnExport">Exportar progreso (.json)</button>
         <input type="file" id="fileInput" accept="application/json" hidden>
-        <button class="btn secondary" id="btnImport">Importar progreso</button>
         <div class="spacer"></div>
         <button class="btn warn" id="btnResetDay">Reiniciar día</button>
       </div>
+
     </div>
   </header>
 
@@ -32,11 +29,17 @@
     <section id="dayContainer" class="grid"></section>
   </main>
 
+  <div class="toolbar toolbar-bottom">
+    <button class="btn" id="btnExportBottom">Exportar progreso (.json)</button>
+    <div class="spacer"></div>
+    <button class="btn warn" id="btnResetDayBottom">Reiniciar día</button>
+  </div>
+
+
   <footer>
     <div class="wrap">
       <div>
-        Consejo: agrega esta página a la pantalla de inicio (iPhone: 
-        <em>Compartir → Añadir a pantalla de inicio</em>) para mejor experiencia offline.
+        Consejo: No adelanta levantar más peso si está mal ejecutado el ejercicio
       </div>
     </div>
   </footer>
