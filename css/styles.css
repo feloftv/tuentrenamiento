@@ -1,0 +1,286 @@
+:root {
+  --bg: #0f1216;
+  --panel: #141922;
+  --card: #1a2030;
+  --text: #e9eef6;
+  --muted: #9fb0c9;
+  --accent: #7bd389;
+  --accent-2: #59a5d8;
+  --danger: #f25f5c;
+  --warning: #ffd166;
+}
+
+/* ===========================
+   RESET Y BASE
+=========================== */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Helvetica, Arial, sans-serif;
+  background: linear-gradient(180deg, #0b0e12, #10151d), var(--bg);
+  color: var(--text);
+}
+
+/* ===========================
+   HEADER
+=========================== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  backdrop-filter: saturate(1.2) blur(6px);
+  background: rgba(16, 21, 29, .8);
+  border-bottom: 1px solid #253043;
+}
+
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 14px 16px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+/* ===========================
+   PESTAÑAS
+=========================== */
+.tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.tab-btn {
+  appearance: none;
+  border: 1px solid #273449;
+  background: #151b27;
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.tab-btn.active {
+  background: var(--accent-2);
+  border-color: var(--accent-2);
+  color: #081019;
+}
+
+/* ===========================
+   BOTONES Y TOOLBAR
+=========================== */
+.toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.btn {
+  border: 1px solid #2b3950;
+  background: #192233;
+  color: var(--text);
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn.secondary {
+  background: #151b23;
+}
+
+.btn.warn {
+  background: #241a1a;
+  border-color: #3a2121;
+  color: #ffb3b3;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.spacer {
+  flex: 1;
+}
+
+/* ===========================
+   GRID Y CARDS
+=========================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #26354d;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* ===========================
+   CABECERA DE CARD
+=========================== */
+.card-head {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+}
+
+.card-head h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.tag {
+  font-size: 11px;
+  color: #0c161f;
+  background: var(--accent-2);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+/* ===========================
+   IMAGEN
+=========================== */
+.media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #0b0f16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media .missing {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* ===========================
+   CAMPOS DE INPUT
+=========================== */
+.fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 10px 12px;
+}
+
+@media (max-width: 560px) {
+  .fields {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  background: #121a27;
+  color: var(--text);
+  border: 1px solid #253449;
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+.field input[type="number"] {
+  appearance: textfield;
+}
+
+.field textarea {
+  min-height: 64px;
+  grid-column: 1 / -1;
+  resize: vertical;
+}
+
+/* ===========================
+   PIE DE CARD
+=========================== */
+.foot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-top: 1px dashed #2a3a56;
+}
+
+.chk {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.done {
+  color: var(--accent);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  padding: 18px 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+a {
+  color: #8bd7ff;
+}
+
+.small {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.day-note {
+  margin: 8px 0 16px 0;
+}

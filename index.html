@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guía Visual de Entrenamiento</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Guía Visual de Entrenamiento</h1>
+      <div class="subtitle">
+        Offline • guarda los progresos en este dispositivo • exporta/importa para sincronizar
+      </div>
+      <div class="tabs" id="tabs"></div>
+      <div class="toolbar">
+        <button class="btn" id="btnExport">Exportar progreso (.json)</button>
+        <input type="file" id="fileInput" accept="application/json" hidden>
+        <button class="btn secondary" id="btnImport">Importar progreso</button>
+        <div class="spacer"></div>
+        <button class="btn warn" id="btnResetDay">Reiniciar día</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="small day-note">
+      Nota del día: <span id="dateLabel"></span>
+    </div>
+    <section id="dayContainer" class="grid"></section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        Consejo: agrega esta página a la pantalla de inicio (iPhone: 
+        <em>Compartir → Añadir a pantalla de inicio</em>) para mejor experiencia offline.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
