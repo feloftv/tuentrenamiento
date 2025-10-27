@@ -57,12 +57,12 @@ const PLAN = {
     { g: "Piernas", n: "Peso Muerto Rumano",    img: "posteriores/peso-muerto-rumano.webp",   series: "4 x 12",          kg: 35 },
 
     // Pecho
-    { g: "Pecho",   n: "Press de pecho",        img: "pecho/press-de-pecho-con-mancuernas.webp", series: "4 x 12",        kg: 12.5 },
+    { g: "Pecho",   n: "Press de pecho",        img: "pecho/press-plano-barra.jpg", series: "4 x 12",        kg: 12.5 },
     { g: "Pecho",   n: "Supino declinado",      img: "pecho/supino-declinado-articulado.jfif",   series: "4 x 12",        kg: 25 },
 
     // Espalda
     { g: "Espalda", n: "Dominadas",             img: "espalda/dominadas-asistidas-o-lat-pulldown.jfif", series: "4 x 12", kg: 35 },
-    { g: "Espalda", n: "Remo en Barra",         img: "espalda/remada-hammer.jpg",              series: "4 x 12",          kg: 10 },
+    { g: "Espalda", n: "Remo Hammer",         img: "espalda/remada-hammer.jpg",              series: "4 x 12",          kg: 10 },
 
     // Core (circuito)
     { g: "Core", n: "Cortitas (Crunch cortito)", img: "core/abdominal-supra-corto-con-piernas-elevadas.jpg", series: "20 reps (3 vueltas, 30s desc.)" },
@@ -77,9 +77,9 @@ const PLAN = {
 };
 
 const DIA4_EXTRAS = {
-  Piernas: { n: "SUMO", g: "Piernas", img: "cuadriceps/sumo.jpg", series: "4 x 12", kg: 70 },
+  Piernas: { n: "SUMO", g: "Piernas", img: "cuadriceps/sumo.png", series: "4 x 12", kg: 70 },
   Pecho:   { n: "Crucifijo inclinado",   g: "Pecho",   img: "pecho/crucifijo-inclinado-con-mancuernas.jpg", series: "4 x 12", kg: 9 },
-  Espalda: { n: "Remada hammer (extra)", g: "Espalda", img: "espalda/remada-hammer.jpg", series: "4 x 12", kg: 35 }
+  Espalda: { n: "Remo (extra)", g: "Espalda", img: "espalda/remo-maquina.png", series: "4 x 12", kg: 35 }
 };
 
 // ============================
